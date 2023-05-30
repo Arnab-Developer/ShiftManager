@@ -24,6 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		api-test.http = api-test.http
+		build.yml = build.yml
 		Directory.Packages.props = Directory.Packages.props
 		LICENSE.txt = LICENSE.txt
 		nuget.config = nuget.config
@@ -36,7 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{0A5254B0-019
 		doc\database-tables.png = doc\database-tables.png
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftManager.Api", "src\ShiftManager.Api\ShiftManager.Api.csproj", "{5EB1A271-BD7F-4547-9ADA-DEC1CD80D300}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShiftManager.Api", "src\ShiftManager.Api\ShiftManager.Api.csproj", "{5EB1A271-BD7F-4547-9ADA-DEC1CD80D300}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

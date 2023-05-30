@@ -1,0 +1,53 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  release:
+    types: [ published ]
+
+env:
+  CONFIGURATION: Release
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+        
+    - name: Restore dependencies
+      run: dotnet restore
+      
+    - name: Build
+      run: dotnet build --no-restore -c ${{ env.CONFIGURATION }}
+
+    - name: Test
+      run: dotnet test --no-restore -c ${{ env.CONFIGURATION }}
+
+  codeql-analysis:    
+    name: CodeQL analysis
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: csharp
+        
+      - name: Autobuild
+        uses: github/codeql-action/autobuild@v2
+        
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
