@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShiftManager.Domain", "src\ShiftManager.Domain\ShiftManager.Domain.csproj", "{34D7CDFF-5A6D-47C9-88F0-94B28C2C965C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{64AC97A8-C4F3-4B02-8610-CFC98EEB5894}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DF624646-C49C-4016-9C0D-BD7B1C514381}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShiftManager.DomainTest", "test\ShiftManager.DomainTest\ShiftManager.DomainTest.csproj", "{5F4E518F-EE0C-4B64-A611-2F06E06288B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShiftManager.Application", "src\ShiftManager.Application\ShiftManager.Application.csproj", "{E9FA7388-7B50-43A3-922A-532C5CE4C9D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShiftManager.ApplicationTest", "test\ShiftManager.ApplicationTest\ShiftManager.ApplicationTest.csproj", "{60C8D527-9E7C-4056-B7F5-C1789505639A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShiftManager.Infra", "src\ShiftManager.Infra\ShiftManager.Infra.csproj", "{80EAB018-0F4E-4487-BF17-B6F463BD196D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShiftManager.InfraTest", "test\ShiftManager.InfraTest\ShiftManager.InfraTest.csproj", "{F91287C0-F6B4-42FB-85D1-BB041C9DC0B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0555ED8A-6C9C-4514-8E3E-67D052815020}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		api-test.http = api-test.http
+		Directory.Packages.props = Directory.Packages.props
+		LICENSE.txt = LICENSE.txt
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{0A5254B0-019D-4472-B316-60E81F8E04EC}"
+	ProjectSection(SolutionItems) = preProject
+		doc\architecture.png = doc\architecture.png
+		doc\database-tables.png = doc\database-tables.png
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftManager.Api", "src\ShiftManager.Api\ShiftManager.Api.csproj", "{5EB1A271-BD7F-4547-9ADA-DEC1CD80D300}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34D7CDFF-5A6D-47C9-88F0-94B28C2C965C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D7CDFF-5A6D-47C9-88F0-94B28C2C965C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D7CDFF-5A6D-47C9-88F0-94B28C2C965C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D7CDFF-5A6D-47C9-88F0-94B28C2C965C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F4E518F-EE0C-4B64-A611-2F06E06288B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F4E518F-EE0C-4B64-A611-2F06E06288B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F4E518F-EE0C-4B64-A611-2F06E06288B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F4E518F-EE0C-4B64-A611-2F06E06288B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9FA7388-7B50-43A3-922A-532C5CE4C9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9FA7388-7B50-43A3-922A-532C5CE4C9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9FA7388-7B50-43A3-922A-532C5CE4C9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9FA7388-7B50-43A3-922A-532C5CE4C9D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C8D527-9E7C-4056-B7F5-C1789505639A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C8D527-9E7C-4056-B7F5-C1789505639A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C8D527-9E7C-4056-B7F5-C1789505639A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C8D527-9E7C-4056-B7F5-C1789505639A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80EAB018-0F4E-4487-BF17-B6F463BD196D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80EAB018-0F4E-4487-BF17-B6F463BD196D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80EAB018-0F4E-4487-BF17-B6F463BD196D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80EAB018-0F4E-4487-BF17-B6F463BD196D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F91287C0-F6B4-42FB-85D1-BB041C9DC0B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F91287C0-F6B4-42FB-85D1-BB041C9DC0B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F91287C0-F6B4-42FB-85D1-BB041C9DC0B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F91287C0-F6B4-42FB-85D1-BB041C9DC0B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB1A271-BD7F-4547-9ADA-DEC1CD80D300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB1A271-BD7F-4547-9ADA-DEC1CD80D300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB1A271-BD7F-4547-9ADA-DEC1CD80D300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB1A271-BD7F-4547-9ADA-DEC1CD80D300}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{34D7CDFF-5A6D-47C9-88F0-94B28C2C965C} = {64AC97A8-C4F3-4B02-8610-CFC98EEB5894}
+		{5F4E518F-EE0C-4B64-A611-2F06E06288B3} = {DF624646-C49C-4016-9C0D-BD7B1C514381}
+		{E9FA7388-7B50-43A3-922A-532C5CE4C9D1} = {64AC97A8-C4F3-4B02-8610-CFC98EEB5894}
+		{60C8D527-9E7C-4056-B7F5-C1789505639A} = {DF624646-C49C-4016-9C0D-BD7B1C514381}
+		{80EAB018-0F4E-4487-BF17-B6F463BD196D} = {64AC97A8-C4F3-4B02-8610-CFC98EEB5894}
+		{F91287C0-F6B4-42FB-85D1-BB041C9DC0B9} = {DF624646-C49C-4016-9C0D-BD7B1C514381}
+		{5EB1A271-BD7F-4547-9ADA-DEC1CD80D300} = {64AC97A8-C4F3-4B02-8610-CFC98EEB5894}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1938B755-7B3F-4E1C-95C9-D994BA826D37}
+	EndGlobalSection
+EndGlobal

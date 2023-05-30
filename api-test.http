@@ -1,0 +1,41 @@
+POST http://localhost:5025/create-employee?firstName=Jon&lastName=Doe
+
+###
+
+POST http://localhost:5025/update-employee?employeeId=1&firstName=Jon1&lastName=Doe1
+
+###
+
+PUT http://localhost:5025/add-schedule?employeeId=4&date=2023-05-31&shift=3
+
+###
+
+PUT http://localhost:5025/update-schedule?employeeId=2&date=2023-05-30&shift=1
+
+###
+
+PUT http://localhost:5025/add-schedule?employeeId=1&date=2023-05-31&shift=3
+
+###
+
+PUT http://localhost:5025/update-schedule?employeeId=1&date=2023-05-31&shift=2
+
+###
+
+DELETE http://localhost:5025/delete-schedule?employeeId=1&date=2024-06-30
+
+###
+
+DELETE http://localhost:5025/delete-employee?employeeId=4
+
+###
+
+GET http://localhost:5025/get-schedule-by-name?firstName=Jon&lastName=Doe
+
+###
+
+GET http://localhost:5025/get-schedule-by-date?date=2023-05-30
+
+###
+
+GET http://localhost:5025/get-schedule-by-month?month=5
